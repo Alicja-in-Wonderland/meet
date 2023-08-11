@@ -138,3 +138,11 @@ As a user, I would like to be able to see a chart showing the upcoming events in
 **When** user wants to compare events between different cities;
 
 **Then** user will be able to access a chart with the number of upcoming events in each city.
+
+## Use of Serverless
+
+The Meet App will use a serverless function to handle the logic on the backend for filtering events by city. When the user searches for a city, the frontend can trigger the serverless function with the search query. The function can then retrieve the list of events from the API, filter them based on the city, and return the filtered results to the frontend.
+
+Similarly, a serverless function will also be used to handle the logic of fetching and filtering the events based on the preferred number. The frontend can trigger the function with the desired number of events, and the function can retrieve the appropriate number of events from the database or API and return them to the frontend.
+
+The app will use serverless functions to visualise data into charts. When the user requests the chart, the frontend can trigger a serverless function that fetches the necessary data from the API, performs any required calculations and returns the processed data to the frontend.
