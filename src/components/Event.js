@@ -6,12 +6,12 @@ const Event = ({ event }) => {
         <li className="event">
             <h2>{event && event.summary}</h2>
             <p>{event && event.location}</p>
-            <p>{event && event.start.dateTime}</p>
+            <p>{event && event.start.dateTime}</p><br />
             {showDetails ?
                 <p className="details">{event && event.description}</p> :
                 null
             }
-            <button className="details-btn" onClick={() => {
+            <br /><button className="details-btn" onClick={() => {
                 showDetails ? setShowDetails(false) : setShowDetails(true)
             }}>{showDetails ? "hide details" : "show details"}</button>
         </li>
