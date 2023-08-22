@@ -81,17 +81,17 @@ As a user, I would like to be able to specify the number of events I want to vie
 
 **Test Scenarios**
 
-3.1. If user hasn’t specified a number, the default number of displayed events will be 25
+3.1. If user hasn’t specified a number, the default number of displayed events will be 32
 
 **Given** the user did not specify a preferred number of events to be displayed;
 
 **When** the user selects a city in which to view events;
 
-**Then** default number displayed will be 25.
+**Then** default number displayed will be 32.
 
 3.2. User can change the number of events they want to see
 
-**Given** the user does not want to view 25 events;
+**Given** the user does not want to view 32 events;
 
 **When** the user prefers to adjust how many events are displayed;
 
