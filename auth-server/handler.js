@@ -1,4 +1,5 @@
 'use strict';
+
 const { google } = require("googleapis");
 const calendar = google.calendar("v3");
 const SCOPES = ["https://www.googleapis.com/auth/calendar.events.public.readonly"];
@@ -58,6 +59,7 @@ module.exports.getAccessToken = async (event) => {
       body: JSON.stringify(results),
     };
   }).catch((error) => {
+    console.log(error);
     //Handle error
     return {
       statusCode: 500,
