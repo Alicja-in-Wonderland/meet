@@ -8,6 +8,7 @@ import { extractLocations, getEvents } from './api';
 import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
 
 import './App.css';
+import logo from './meet-app-512.png';
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -42,6 +43,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="app-header-image">
+        <img src={logo} alt="app logo" />
+      </div>
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}

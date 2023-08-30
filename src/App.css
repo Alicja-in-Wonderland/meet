@@ -98,7 +98,20 @@ input[type="number"] {
 
 .charts-container {
   display: grid;
+  border: 1px solid #ccc;
+  padding-top: 20px;
   grid-template-columns: 1fr 1fr;
+}
+
+.app-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header-image > img {
+  width: 150px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
