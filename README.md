@@ -4,7 +4,7 @@ Meet App allows users to search for a city and get a list of events hosted in th
 
 # Tech Stack
 
-Meet is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+Meet is a serverless, progressive web application (PWA) created with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
 
 # Features, User Stories & Test Scenarios
 
