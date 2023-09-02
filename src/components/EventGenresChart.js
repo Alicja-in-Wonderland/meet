@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const EventGenresChart = ({ events }) => {
+    const [data, setData] = useState([]);
     const genres = ['React', 'JavaScript', 'Node', 'jQuery', 'Angular'];
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
     useEffect(() => {
         setData(getData());
-    }, [events]);
-
-    const [data, setData] = useState([]);
+    }, [`${events}`]);
 
     const getData = () => {
         const data = genres.map((genre) => {
